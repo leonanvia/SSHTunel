@@ -18,7 +18,7 @@ if len(list_of_arguments) == 1:
 
     for p in data["tunel"]:
         try:
-            nome = p["nome"] if p["nome"] != "" else "---"
+            nome = p["nome"] if p["nome"] != "" else "NONE"
             porta = p["porta"]
             host = p["ip"]
             ssh.create_local_ssh_tunnel(porta,host,porta)

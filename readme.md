@@ -13,3 +13,18 @@ para fecha-las
 ```sh
 python main.py stop
 ```
+```sh
+"tunel": 
+    [
+        {
+            "nome":"vv-crm",
+            "porta": "8084",
+            "ip": "10.128.145.9"
+        }
+    ]
+```
+```sh
+"user":"USUARIO",
+"pass":"SENHA",
+"ip":"10.128.145.9",
+```
