@@ -19,12 +19,12 @@ python main.py stop
         {
             "nome":"vv-crm",
             "porta": "8084",
-            "ip": "10.128.145.9"
+            "ip": "10.128.145.9" #IP do tunelamento
         }
     ]
 ```
 ```sh
 "user":"USUARIO",
 "pass":"SENHA",
-"ip":"10.128.145.9",
+"ip":"10.128.145.9" #IP da conexão
 ```
