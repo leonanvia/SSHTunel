@@ -17,11 +17,14 @@ if len(list_of_arguments) == 1:
     ssh.login(data["user"], data["pass"])    
 
     for p in data["tunel"]:
-        porta = p["porta"]
-        host = p["ip"]
-        
-        ssh.create_local_ssh_tunnel(porta,host,porta)
-        print('Created Tunel for -> '+porta+':'+host+':'+porta)    
+        try:
+            nome = p["nome"] if p["nome"] != "" else "---"
+            porta = p["porta"]
+            host = p["ip"]
+            ssh.create_local_ssh_tunnel(porta,host,porta)
+            print(f'Created Tunel for -> {nome} -> {porta}:{host}:{porta}')    
+        except:
+            print(f'Failed to create -> {nome} -> {porta}:{host}:{porta}')
 else:
     if list_of_arguments[1] == 'stop':
         ssh.close_all_connections()
