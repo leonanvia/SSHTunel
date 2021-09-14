@@ -4,6 +4,11 @@
 - configure o arquivo conf.json indicando as portas que deseja criar o tunel
 - preencha também seu usuario e senha
 
+- instale as dependencias executando o comando
+```sh
+python -m pip install -r requirements.txt
+```
+
 para abrir as conexões execute o comando
 ```sh
 python main.py
